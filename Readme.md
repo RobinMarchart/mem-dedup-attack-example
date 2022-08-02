@@ -1,5 +1,7 @@
 # Memory Deduplication exploit example
 
+only runs on Linux
+
 # how to use
 
 1. enable ksm
