@@ -39,7 +39,7 @@ pub fn main() {
 
 fn measure_needed_time(page: &mut Page, deviation: u64, expected: u64) -> Duration {
     let mut count = 0u64;
-    let threshold = expected + 3 * deviation;
+    let threshold = expected + 5 * deviation;
     loop {
         if (threshold as u128) < time_write(page).as_nanos() {
             break Duration::from_secs(count);
